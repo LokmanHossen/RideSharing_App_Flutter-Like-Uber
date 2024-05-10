@@ -36,12 +36,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
           children: [
             Column(
               children: [
+                // Container(
+                //   height: 250,
+                //   width: double.infinity,
+                //   child: Image.asset(
+                //     darkTheme
+                //         ? 'assets/images/city2.jpeg'
+                //         : 'assets/images/city.jpeg',
+                //     fit: BoxFit.cover,
+                //   ),
+                // ),
                 Image.asset(
                   darkTheme
                       ? 'assets/images/city2.jpeg'
                       : 'assets/images/city.jpeg',
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 Text(
                   'Register',
                   style: TextStyle(
@@ -51,7 +61,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(15, 20, 15, 50),
+                  padding: const EdgeInsets.fromLTRB(15, 17, 15, 50),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -235,7 +245,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 },
                               ),
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 10),
                             TextFormField(
                               obscureText: !_passwordvisible,
                               inputFormatters: [
@@ -299,7 +309,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 },
                               ),
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 10),
                             TextFormField(
                               obscureText: !_passwordvisible,
                               inputFormatters: [
@@ -368,12 +378,68 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ),
                             ),
                             const SizedBox(height: 20),
-                            ElevatedButton(onPressed: () {
-                              
-                            }, child: Text('Register', ))
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: darkTheme
+                                      ? Colors.amber.shade400
+                                      : Colors.blue,
+                                  foregroundColor:
+                                      darkTheme ? Colors.black : Colors.white,
+                                  elevation: 0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(40),
+                                  ),
+                                  minimumSize: const Size(double.infinity, 50)),
+                              onPressed: () {},
+                              child: const Text(
+                                'Register',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+                            GestureDetector(
+                              onTap: () {},
+                              child: Text(
+                                'Forgot Password',
+                                style: TextStyle(
+                                  color: darkTheme
+                                      ? Colors.amber.shade400
+                                      : Colors.blue,
+                                  fontSize: 17,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 7),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  'Have an Account?',
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                const SizedBox(width: 1),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'Sign In',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: darkTheme
+                                          ? Colors.amber.shade400
+                                          : Colors.blue,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
