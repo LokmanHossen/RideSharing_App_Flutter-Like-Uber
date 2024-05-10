@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265196339567",
+    "project_id": "drivessharingapp-175cb",
+    "storage_bucket": "drivessharingapp-175cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265196339567:android:e4868cf1b745d96a2be89a",
+        "android_client_info": {
+          "package_name": "com.example.texi_ride_sharing_app_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUyJZYbXlwxRbKTj2QWLqWuyolCspb7Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
