@@ -54,6 +54,7 @@ class DefaultFirebaseOptions {
     appId: '1:265196339567:android:e4868cf1b745d96a2be89a',
     messagingSenderId: '265196339567',
     projectId: 'drivessharingapp-175cb',
+    databaseURL: 'https://drivessharingapp-175cb-default-rtdb.firebaseio.com',
     storageBucket: 'drivessharingapp-175cb.appspot.com',
   );
 
@@ -62,6 +63,7 @@ class DefaultFirebaseOptions {
     appId: '1:265196339567:ios:aa641f3e00c200712be89a',
     messagingSenderId: '265196339567',
     projectId: 'drivessharingapp-175cb',
+    databaseURL: 'https://drivessharingapp-175cb-default-rtdb.firebaseio.com',
     storageBucket: 'drivessharingapp-175cb.appspot.com',
     iosBundleId: 'com.example.texiRideSharingAppFlutter',
   );

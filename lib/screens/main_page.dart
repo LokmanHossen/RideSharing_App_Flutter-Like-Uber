@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../screens/register_screen.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -7,7 +6,9 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: RegisterScreen(),
+      body: Center(
+        child: Text("MAinPage"),
+      ),
     );
   }
 }
