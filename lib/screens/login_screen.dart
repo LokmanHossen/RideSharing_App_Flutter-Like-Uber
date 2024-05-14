@@ -2,6 +2,8 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:texi_ride_sharing_app_flutter/screens/forgot_password_screen.dart';
+import 'package:texi_ride_sharing_app_flutter/screens/register_screen.dart';
 
 import '../global/global.dart';
 import 'main_page.dart';
@@ -365,7 +367,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             const SizedBox(height: 20),
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const ForgotPasswordScreen(),
+                                    ));
+                              },
                               child: Text(
                                 'Forgot Password',
                                 style: TextStyle(
@@ -389,7 +398,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                                 const SizedBox(width: 1),
                                 TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (c) => const RegisterScreen()));
+                                  },
                                   child: Text(
                                     'Sihn Up',
                                     style: TextStyle(
