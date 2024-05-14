@@ -6,6 +6,8 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:texi_ride_sharing_app_flutter/global/global.dart';
+import 'package:texi_ride_sharing_app_flutter/screens/forgot_password_screen.dart';
+import 'package:texi_ride_sharing_app_flutter/screens/login_screen.dart';
 
 import 'main_page.dart';
 
@@ -48,7 +50,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
           userRef.child(currentUser!.uid).set(userMap);
         }
         Fluttertoast.showToast(msg: "Successfully Registered".toString());
-        Navigator.push(context, MaterialPageRoute(builder: (c) => const MainPage()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (c) => const MainPage()));
       }).catchError((errorMessage) {
         Fluttertoast.showToast(msg: "Error occured: \n $errorMessage");
       });
@@ -83,7 +86,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 // ),
                 Image.asset(
                   darkTheme
-                      ? 'assets/images/city2.jpeg'
+                      ? 'assets/images/city2.jpg'
                       : 'assets/images/city.jpeg',
                 ),
                 const SizedBox(height: 10),
@@ -438,7 +441,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             ),
                             const SizedBox(height: 20),
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (c) =>
+                                            const ForgotPasswordScreen()));
+                              },
                               child: Text(
                                 'Forgot Password',
                                 style: TextStyle(
@@ -462,7 +471,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 ),
                                 const SizedBox(width: 1),
                                 TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (c) =>
+                                                const LoginScreen()));
+                                  },
                                   child: Text(
                                     'Sign In',
                                     style: TextStyle(
@@ -486,7 +501,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
           ],
         ),
       ),
-    
     );
   }
 }
