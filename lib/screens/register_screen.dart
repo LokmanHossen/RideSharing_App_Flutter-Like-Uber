@@ -9,7 +9,7 @@ import 'package:texi_ride_sharing_app_flutter/global/global.dart';
 import 'package:texi_ride_sharing_app_flutter/screens/forgot_password_screen.dart';
 import 'package:texi_ride_sharing_app_flutter/screens/login_screen.dart';
 
-import 'main_page.dart';
+import 'main_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

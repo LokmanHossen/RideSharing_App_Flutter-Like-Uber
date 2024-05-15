@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:texi_ride_sharing_app_flutter/splashScreen/splash_screen.dart';
 import '../themeProvider/theme_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'firebase_options.dart';
 
 Future<void> main() async {

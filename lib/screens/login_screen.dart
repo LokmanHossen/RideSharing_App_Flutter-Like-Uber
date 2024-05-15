@@ -6,7 +6,7 @@ import 'package:texi_ride_sharing_app_flutter/screens/forgot_password_screen.dar
 import 'package:texi_ride_sharing_app_flutter/screens/register_screen.dart';
 
 import '../global/global.dart';
-import 'main_page.dart';
+import 'main_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

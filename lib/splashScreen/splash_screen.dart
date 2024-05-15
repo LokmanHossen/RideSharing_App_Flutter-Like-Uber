@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:texi_ride_sharing_app_flutter/Assistants/assistant_metthods.dart';
 import 'package:texi_ride_sharing_app_flutter/global/global.dart';
 import 'package:texi_ride_sharing_app_flutter/screens/login_screen.dart';
-import 'package:texi_ride_sharing_app_flutter/screens/main_page.dart';
+import 'package:texi_ride_sharing_app_flutter/screens/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
